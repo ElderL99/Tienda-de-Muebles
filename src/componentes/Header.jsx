@@ -10,10 +10,10 @@ export default function Navbar() {
     <nav className="w-full  shadow-2xl  bg-[#F5E9DA] duration-300 flex flex-col gap-5 p-5 lg:flex-row ">
       {/* Logo + Botón */} 
       <div className="flex justify-between items-center  md:flex   lg:justify-between  lg:w-full  ">
-        <h1 className="text-xl font-bold text-black lg:text-2xl">MTD Furniture </h1>
+       <Link href="/"> <h1 className="text-xl font-bold text-[#4A2E2A] lg:text-4xl">MTD Furniture </h1></Link>
 
         <button
-          className="md:hidden text-3xl"
+          className="lg:hidden text-3xl"
           onClick={() => setAbierto(!abierto)}
         >
           ☰
@@ -22,15 +22,15 @@ export default function Navbar() {
 
       {/* Menú desplegable */}
       <ul
-        className={`${abierto ? 'block' : 'md:block  hidden'} flex flex-col space-y-5 `}
+        className={`${abierto ? 'block' : 'lg:block  hidden'} flex flex-col space-y-5`}
       >
-        <Link href="/" className="p-4 border-b bg-[#F5E9DA] md:border-none text-black font-bold  hover:cursor-pointer  hover:text-2xl hover:rounded-md">
+        <Link href="/" className="p-4 border-b bg-[] md:border-none text-black font-bold  hover:cursor-pointer  hover:bg-[#4A2E2A] hover:text-white ">
           Inicio
         </Link>
-        <Link href="/catalogo" className="p-4 border-b bg-[#F5E9DA] md:border-none text-black font-bold hover:cursor-pointer  hover:text-2xl hover:rounded-md">
+        <Link href="/catalogo" className="p-4 border-b bg-[#F5E9DA] md:border-none text-black font-bold hover:cursor-pointer  hover:bg-[#4A2E2A] hover:text-white ">
           Catálogo
         </Link>
-        <Link href="/contacto" className="p-4 md:border-none bg-[#F5E9DA] text-black bf font-bold hover:cursor-pointer  hover:text-2xl hover:rounded-md">
+        <Link href="/contacto" className="p-4 md:border-none bg-[#F5E9DA] text-black bf font-bold hover:cursor-pointer  hover:bg-[#4A2E2A] hover:text-white ">
           Contacto 
         </Link>
       </ul>
