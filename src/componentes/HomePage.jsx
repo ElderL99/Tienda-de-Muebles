@@ -19,7 +19,7 @@ export default function HomePage() {
           Ver Catálogo
         </Link>
         <Image
-          src="/hero-muebles.jpg"
+          src="/sala.jpg"
           alt="Hero muebles"
           width={1200}
           height={600}
@@ -47,14 +47,14 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold mb-6">Categorías Destacadas</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { name: "Cocinas", img: "/cocinas.jpg", href: "/catalogo#cocinas" },
-            { name: "Recámaras", img: "/recamaras.jpg", href: "/catalogo#recamaras" },
-            { name: "Lámparas", img: "/lamparas.jpg", href: "/catalogo#lamparas" },
+            { name: "Cocinas", img: "/cocina.jpg", href: "/catalogo"  },
+            { name: "Recámaras", img: "/recamara.jpg", href: "/catalogo#Lamparas" },
+            { name: "Lámparas", img: "/lamparas.jpg", href: "/catalogo#" },
           ].map((cat, i) => (
             <Link
               key={i}
               href={cat.href}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition"
+              className="bg-white rounded-lg  shadow-md hover:scale-105 transition  "
             >
               <Image
                 src={cat.img}

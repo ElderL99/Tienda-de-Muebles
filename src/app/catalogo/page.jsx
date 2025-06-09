@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Cocinas from '@/componentes/Cocinas';
 import Lamparas from '@/componentes/Lamparas';
+import Muebles from '@/componentes/Muebles';
 
 export default function Catalogo() {
   const [categoriaActiva, setCategoriaActiva] = useState('cocinas');
@@ -37,7 +38,7 @@ export default function Catalogo() {
       <div className="p-4">
         {categoriaActiva === 'cocinas' && <Cocinas />}
         {categoriaActiva === 'lamparas' && <Lamparas />}
-        {categoriaActiva === 'muebles' && <p>🪑 Aquí irán los muebles</p>}
+        {categoriaActiva === 'muebles' && <Muebles/>}
         {categoriaActiva === 'sofas' && <p>🛋️ Aquí irán los sofás</p>}
         {categoriaActiva === 'mesas' && <p>🪵 Aquí irán las mesas</p>}
         {categoriaActiva === 'sillas' && <p>🪑 Aquí irán las sillas</p>}

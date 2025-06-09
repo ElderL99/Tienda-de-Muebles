@@ -23,14 +23,14 @@ export default function Lamparas() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h2 className="text-center text-xl font-bold mb-6 mt-10 ">Lámparas</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:grid-cols-4 lg:gap-10 lg:px-10 lg:py-10">
+      <h2 className="text-center text-xl font-bold mb-6  ">Lámparas</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:grid-cols-4 lg:gap-10 lg:px-10 lg:py-10">
         {lamparas.map((lampara) => (
           <div key={lampara.id} className="bg-white rounded-lg shadow hover:shadow-lg transition hover:cursor-pointer p-4">
             <img
               src={lampara.image_path}
               alt={lampara.name}
-              className="w-full h-40 mb-2 rounded lg:h-60 lg:w-90"
+              className="w-full h-50 mb-2 rounded lg:h-60 lg:w-90"
             />
             <h2 className="font-bold text-lg">{lampara.name}</h2>
             <p className="text-gray-600 capitalize">{lampara.category}</p>
